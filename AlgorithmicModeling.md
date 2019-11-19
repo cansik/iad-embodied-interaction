@@ -60,7 +60,8 @@ style: |
 * Models in 2d 📈
 * Exercise 1 ⚡️
 * Models in 3d 🍌
-* Exercise 2 ⚡️
+* (Exercise 2) ⚡️⚡️⚡️
+* Your own project! 🕵🏼‍♀️
 
 ---
 
@@ -184,6 +185,7 @@ style: |
 * Programming
 * Interaction
 * Price
+* Export
 
 ---
 
@@ -306,9 +308,9 @@ style: |
 * Easy to use values later
 
 ```json
-Monday:         421 => 1.0
-Tuesday:	320 => 0.6
-Wednesday:	292 => ...
+Monday:         421
+Tuesday:	320
+Wednesday:	292
 Thursday:	203
 Friday:	        210
 Saturday:	150
@@ -333,6 +335,73 @@ Sunday:	        0.469496
 
 ### Use Data to Draw
 
+* Define Output 2D / 3D
+  * 2D -> PDF / SVG
+  * 3D -> OBJ
+
+
+---
+
+### PDF Output (2d)
+
+- Print
+- Lasercut / CNC
+- Project into space
+- Manipulate in Illustrator
+
+---
+
+### Processing PDF Output
+
+```processing
+import processing.pdf.*;
+
+PGraphics pdf = (PGraphicsPDF)beginRecord(PDF, pdfName);
+pdf.setSize(round(px(width) * pixelDensity), 
+            round(px(height)) * pixelDensity);
+// draw
+endRecord();
+```
+
+* Too complicated... 🙈
+
+---
+
+### PDF Utils
+
+```processing
+// brush settings
+void cut();
+void engrave();
+
+// export
+void createPDF(String pdfName);
+```
+
+https://git.io/JeK26
+
+---
+
+### Pixels / Metric
+
+* Create precise models
+* `1 mm` = `0.3527778 px`
+
+---
+
+### Utils
+
+```processing
+float mm(float px);
+float px(float mm);
+```
+
+---
+
+### Custom Shapes
+
+
+
 ---
 
 ### Summary
@@ -342,6 +411,12 @@ Sunday:	        0.469496
   * (Filter / Map / Aggregation / Normalisation)
 * 2D drawing
 * PDF creation
+
+---
+
+### Demo Emil
+
+🎪
 
 ---
 
