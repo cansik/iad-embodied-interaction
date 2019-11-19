@@ -17,6 +17,7 @@ Materials for the data embodiment input in the embodied interaction BA course.
 		- 3d Printer / CAD
 - Data
 	- Data Input (how to parse)
+		- Analyze
 		- JSON / CSV
 		- Filter, Map, Aggregate
 		- Normalize
