@@ -83,7 +83,7 @@ style: |
 
 ---
 
-### Terminology
+### Terms
 
 ![bg left](images/parametric.jpg)
 
@@ -91,7 +91,7 @@ style: |
 
 ---
 
-### Terminology
+### Terms
 
 ![bg left](images/generative-design.jpg)
 
@@ -350,7 +350,7 @@ digimorphe.com
 
 ---
 
-### Normalisation
+### Normalization
 
 * Easy to use values later
 
@@ -366,7 +366,7 @@ Sunday:	        168
 
 ---
 
-### Normalised Values
+### Normalized Values
 
 ```
 Monday:	        1.0
@@ -376,6 +376,19 @@ Thursday:	0.6392573
 Friday:         0.52785146
 Saturday:	0.3501326
 Sunday:	        0.469496
+```
+
+---
+
+### Normalize Function
+
+```
+void normalize(float[] data) {
+  float max = max(data);
+  for (int i = 0; i < data.length; i++) {
+    data[i] /= max;
+  }
+}
 ```
 
 ---
@@ -566,7 +579,9 @@ Use the provided sketch as an example! Think about data input / processing and p
 
 ---
 
-### 3D and Processing
+![bg left fit](images/OBJExport.jpg)
+
+### Processing 3d
 
 - Same process as in 2d
 - `X, Y, Z` ✨
@@ -578,6 +593,8 @@ Use the provided sketch as an example! Think about data input / processing and p
 
 ### Sketch
 
+- Set renderer to `P3D`
+
 ```processing
 void setup() {
   size(500, 500, P3D);
@@ -587,6 +604,110 @@ void draw() {
   // do your 3d stuff
 }
 ```
+
+---
+
+### 3D Coordinates
+
+```processing
+// position
+rotateX(radians(30));
+translate(250, 300, 0);
+
+// draw object
+box(100);
+```
+
+---
+
+### Primitives
+
+* rect
+* box
+* sphere
+
+---
+
+### Coordinate System
+
+```
+for(int i = 0; i < 100; i++) {
+  push();
+
+  // position
+  translate(200, i);
+  rotateX(radians(30 + i));
+
+  // draw
+  box(50);
+
+  pop();
+}
+```
+
+---
+
+### Peasy Cam 📷
+
+```processing
+import peasy.PeasyCam;
+
+PeasyCam cam;
+
+void setup() {
+  size(500, 500, P3D);
+  
+  cam = new PeasyCam(this, 400);
+}
+```
+
+* Contribution Manager
+
+---
+
+### OBJ Export
+
+* Works the same as PDF export
+* Contribution Manager
+
+```processing
+createOBJ("github-bracelet.obj");
+```
+
+Utils: https://git.io/JeK26
+
+---
+
+### Post Processing
+
+* Meshalb or MeshMixer
+* Clean Model
+  * Flip Normals
+  * Scale
+  * Remove Surfaces
+* Create STL
+
+---
+
+### Meshlab
+
+![w:800](images/meshlab.png)
+
+---
+
+### Cetus3D
+
+![w:800](images/cetus.png)
+
+---
+
+### 3D Summary
+
+* Same Data Processing
+* Coordinate System
+* Camera
+* Export to OBJ
+* Cleanup
 
 ---
 
