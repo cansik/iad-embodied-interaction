@@ -107,6 +107,37 @@ style: |
 
 ---
 
+### Consuelo Keller
+
+![bg left](images/digimorphe_faceted_screenshot2_bw.jpg)
+digimorphe.com
+
+---
+
+### 3D Print (PLA)
+
+![bg right](images/digimorphe_Ultimaker_8844_bw.jpg)
+
+---
+
+### 3D Print (Metal)
+
+![bg left](images/digimorphe_SLS_Still3_bw.jpg)
+
+---
+
+![bg](images/jewlery.jpg)
+
+---
+
+![bg](images/jewlery2.jpg)
+
+---
+
+### // more data driven example
+
+---
+
 ### Deep Vision
 
 ![bg left](images/platzspitz_squared.png)
@@ -201,6 +232,10 @@ style: |
 
 ---
 
+### Questions?
+
+---
+
 ### Pipeline
 
 - Data Analysis 👀
@@ -247,6 +282,16 @@ style: |
 
 ---
 
+### Data Input
+
+* JSONLoader (JSON)
+* Table (CSV)
+
+<span style="font-size:50%">JSON: processing.org/reference/loadJSONObject_.html</span>
+<span style="font-size:50%">CSV: processing.org/reference/loadTable_.html</span>
+
+---
+
 ### Ideation
 
 * 💡
@@ -258,6 +303,8 @@ style: |
 ### Idea 💎
 
 > Create a bracelet that represents the work-balance of ones week.
+
+* 🤷🏽‍♀️
 
 ---
 
@@ -333,11 +380,11 @@ Sunday:	        0.469496
 
 ---
 
-### Use Data to Draw
+### Output Desicion
 
 * Define Output 2D / 3D
-  * 2D -> PDF / SVG
-  * 3D -> OBJ
+  * 2D -> `PDF` / `SVG`
+  * 3D -> `OBJ`
 
 
 ---
@@ -382,14 +429,14 @@ https://git.io/JeK26
 
 ---
 
-### Pixels / Metric
+### Document Units (px)
 
 * Create precise models
 * `1 mm` = `0.3527778 px`
 
 ---
 
-### Utils
+### PDF Utils
 
 ```processing
 float mm(float px);
@@ -400,7 +447,83 @@ float px(float mm);
 
 ### Custom Shapes
 
+![bg left](images/processing-shapes.jpg)
 
+```processing
+beginShape();
+
+vertex(0, 0);
+vertex(20, 0);
+vertex(20, 20);
+vertex(0, 20);
+
+curveVertex(84,  91);
+
+endShape(CLOSE);
+```
+
+---
+
+### Relief Data
+
+![bg left](images/gis.jpeg)
+
+* Too many data points
+* Filter or aggregate points
+
+---
+
+### Bracelet Code
+
+```processing
+// inner
+circle(0, 0, inner);
+
+// outer
+beginShape();
+float angle = radians(360.0 / (weekdays.length));
+float radius = (inner * 0.5) + thickness;
+
+for (int i = 0; i < weekdays.length; i++) {
+  // rotation, then translation
+  float x = sin(angle * i) * (radius + (outer * weekdays[i]));
+  float y = cos(angle * i) * (radius + (outer * weekdays[i]));
+
+  vertex(x, y);
+}
+endShape(CLOSE);
+```
+
+---
+
+### Parameters
+
+* Use to create iterations
+* You curate the outcomes
+* Play around! 🤪
+
+---
+
+### ControlP5
+
+![bg left fit](images/controlp5.png)
+
+* Control Parameters
+* Contribution Manager
+
+---
+
+### ControlP5 Example
+
+```processing
+float test = 3.0;
+
+ControlP5 cp5 = new ControlP5(this);
+
+cp5.addSlider("test", 10, 150, 10, h, 100, 20)
+    .setRange(1, 20)
+    .setLabel("Test")
+```
 
 ---
 
@@ -410,22 +533,60 @@ float px(float mm);
 * Data processing
   * (Filter / Map / Aggregation / Normalisation)
 * 2D drawing
+  * PShape
+  * Metric Convertion
+* Parameter
 * PDF creation
 
 ---
 
-### Demo Emil
+### Demo App
 
 🎪
 
 ---
 
-### Data Input
+### Task 1 <span style="font-size:50%">30min</span>
 
-* JSONLoader
+Either use your data or my provided one to create a basic sketch which creates 2D PDFs which are printable.
 
+Use the provided sketch as an example! Think about data input / processing and parameters.
 
-<span style="font-size:50%">Hint: processing.org/reference/loadJSONObject_.html</span>
+---
+
+### Task 1 Hint
+
+- Data Processing
+- Data Visualisation
+- 2D Model
+
+---
+
+### Questions?
+
+---
+
+### 3D and Processing
+
+- Same process as in 2d
+- `X, Y, Z` ✨
+- Camera 📷
+- OBJ export
+- Cleanup
+
+---
+
+### Sketch
+
+```processing
+void setup() {
+  size(500, 500, P3D);
+}
+
+void draw() {
+  // do your 3d stuff
+}
+```
 
 ---
 
