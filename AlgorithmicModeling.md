@@ -101,9 +101,32 @@ style: |
 
 ---
 
+![bg right](images/datamapping.png)
+
 ### Overview
 
-// data source -> process -> map -> create
+* Data Mapping
+  * Data Source
+  * Process & Map
+  * Data Target
+* Aim
+  * Simplify
+  * Analyse
+  * Extract 
+
+---
+
+![bg](images/visu.png)
+
+---
+
+![bg left](images/pattern.jpg)
+
+### Embodied Interaction
+
+* Pattern / Form
+* Experience
+* Map Data to Space
 
 ---
 
@@ -134,7 +157,11 @@ digimorphe.com
 
 ---
 
-### // more data driven example
+<video autoplay muted loop class="bg"><source src="images/scan3d-dramatic.mp4"></video>
+
+---
+
+![bg](images/3dultra.jpg)
 
 ---
 
@@ -142,7 +169,7 @@ digimorphe.com
 
 ![bg left](images/platzspitz_squared.png)
 
-* MA IAD
+* Master IAD
 * 3D data as input
 
 ---
@@ -212,11 +239,11 @@ digimorphe.com
 
 ### Why Processing?
 
-* Freedom
-* Programming
+* Already in use
 * Interaction
 * Price
 * Export
+* Freedom / Programming
 
 ---
 
@@ -559,7 +586,13 @@ cp5.addSlider("test", 10, 150, 10, h, 100, 20)
 
 ---
 
-### Task 1 <span style="font-size:50%">30min</span>
+### Demo App
+
+
+
+---
+
+### Task 1 ⚡️ <span style="font-size:50%">30min</span>
 
 Either use your data or my provided one to create a basic sketch which creates 2D PDFs which are printable.
 
@@ -620,11 +653,14 @@ box(100);
 
 ---
 
+![bg left fit](images/primitives3D.png)
+
 ### Primitives
 
-* rect
-* box
-* sphere
+* `rect`
+* `box`
+* `sphere`
+* `PShape` ✨
 
 ---
 
