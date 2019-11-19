@@ -178,17 +178,6 @@ digimorphe.com
 
 ---
 
-![bg](images/deep-vision-build.jpeg)
-![bg](images/FullSizeRender.jpeg)
-
----
-
-### Demo Pointcloud
-
-🎪
-
----
-
 ![bg](images/emil.jpeg)
 ![bg](images/emil-depth.png)
 
@@ -205,6 +194,18 @@ digimorphe.com
 ---
 
 ### Demo Emil
+
+🎪
+
+---
+
+
+![bg](images/deep-vision-build.jpeg)
+![bg](images/FullSizeRender.jpeg)
+
+---
+
+### Demo Pointcloud
 
 🎪
 
