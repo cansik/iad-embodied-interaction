@@ -12,23 +12,23 @@ Materials for the data embodiment input in the embodied interaction BA course.
 
 #### Github Visualisation
 
-[Example](examples/GithubActivity)
+[Example](tutorials/GithubActivity)
 
 #### Github Bracelet
 
-[Example](examples/GithubActivityBracelet)
+[Example](tutorials/GithubActivityBracelet)
 
 ![Bracelet](tutorials/GithubActivityBracelet/example.png)
 
 #### Basic 3D Sketch
 
-[Example](examples/Basic3DExample)
+[Example](tutorials/Basic3DExample)
 
 ![Bracelet](tutorials/Basic3DExample/example.png)
 
 #### Sound To 3D
 
-[Example](examples/SoundTo3D)
+[Example](tutorials/SoundTo3D)
 
 ![Bracelet](tutorials/SoundTo3D/example.png)
 
