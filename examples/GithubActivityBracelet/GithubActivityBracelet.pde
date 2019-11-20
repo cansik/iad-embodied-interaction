@@ -53,9 +53,10 @@ void setup() {
 void draw() {
   if (isProcessing) {
     background(255);
-    translate(width / 2, height / 2);
   }
 
+  push();
+  translate(width / 2, height / 2);
   cut();
 
   // inner
@@ -74,6 +75,9 @@ void draw() {
     vertex(x, y);
   }
   endShape(CLOSE);
+  pop();
+  
+  cp5.draw();
 }
 
 void keyPressed() {

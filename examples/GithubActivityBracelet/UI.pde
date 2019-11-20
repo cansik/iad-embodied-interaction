@@ -4,6 +4,7 @@ int uiHeight;
 
 void setupUI() {
   cp5 = new ControlP5(this);
+  cp5.setAutoDraw(false);
   cp5.setFont(createFont("Arial", 10));
 
   int h = 10;

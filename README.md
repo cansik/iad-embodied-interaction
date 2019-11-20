@@ -12,17 +12,32 @@ Materials for the data embodiment input in the embodied interaction BA course.
 
 #### Github Visualisation
 
-[Example](tree/master/examples/GithubActivity)
+[Example](examples/GithubActivity)
 
 #### Github Bracelet
 
-[Example](tree/master/examples/GithubActivityBracelet)
+[Example](examples/GithubActivityBracelet)
+
+![Bracelet](examples/GithubActivityBracelet/example.png)
 
 #### Basic 3D Sketch
 
-[Example](tree/master/examples/Basic3DExample)
+[Example](examples/Basic3DExample)
+
+![Bracelet](examples/Basic3DExample/example.png)
+
+#### Sound To 3D
+
+[Example](examples/SoundTo3D)
+
+![Bracelet](examples/SoundTo3D/example.png)
 
 ### Utilities
 
 - [PDF Utils](https://gist.github.com/cansik/fbb5ad05fca98831ea7a77a65c8f6e92#file-1pdfutils-pde)
 - [OBJ Utils](https://gist.github.com/cansik/fbb5ad05fca98831ea7a77a65c8f6e92#file-2objutils-pde)
+
+### Libraries
+
+- [Peasycam](http://mrfeinberg.com/peasycam/)
+- [ControlP5](http://www.sojamo.de/libraries/controlP5/)
