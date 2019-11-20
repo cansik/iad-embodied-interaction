@@ -4,6 +4,8 @@ PeasyCam cam;
 
 float[] data;
 
+float intensity = 300;
+
 void setup() {
   size(800, 600, P3D);
   pixelDensity(2);
@@ -16,7 +18,7 @@ void setup() {
 
   // load data
   float[] soundWave = loadSoundFile("data/hello.wav");
-  data = subSampleArray(soundWave, 512);
+  data = subSampleArray(soundWave, 256);
 
   println("Data: " + data.length);
 }
@@ -35,7 +37,7 @@ void draw() {
     push();
     rotate(angleStep * i);
     translate(100, 0, 0);
-    box(abs(data[i]) * 1000);
+    box(10, 10, max(10, abs(data[i]) * intensity));
     pop();
   }
 

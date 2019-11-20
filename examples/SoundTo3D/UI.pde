@@ -16,7 +16,7 @@ void setupUI()
   cp5.setColorActive(color(255, 132, 124));
 
   int h = 10;
-  cp5.addSlider("samplingStep", 10, 150, 10, h, 100, 20)
-    .setRange(1, 15)
-    .setLabel("Sampling Step");
+  cp5.addSlider("intensity", 10, 150, 10, h, 100, 20)
+    .setRange(200, 1000)
+    .setLabel("Intensity");
 }
