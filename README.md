@@ -37,7 +37,7 @@ Materials for the data embodiment input in the embodied interaction BA course.
 - [PDF Utils](https://gist.github.com/cansik/fbb5ad05fca98831ea7a77a65c8f6e92#file-1pdfutils-pde)
 - [OBJ Utils](https://gist.github.com/cansik/fbb5ad05fca98831ea7a77a65c8f6e92#file-2objutils-pde)
 
-### Libraries
+### Libraries
 
 - [Peasycam](http://mrfeinberg.com/peasycam/)
 - [ControlP5](http://www.sojamo.de/libraries/controlP5/)
